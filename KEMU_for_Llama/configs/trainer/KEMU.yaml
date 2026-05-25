@@ -1,0 +1,12 @@
+defaults:
+  - finetune
+
+handler: KEMU
+method_args:
+  step_size: 0.07
+  fisher_topk: 10
+  norm_preserve: true
+  pseudo_sample: false
+  keyword_selection_method: frequency
+args:
+  num_train_epochs: 1
